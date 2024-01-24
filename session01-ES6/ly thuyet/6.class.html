@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Document</title>
+    </head>
+    <body>
+        <!-- 
+            class: dung de khoi tao doi tuong 
+            (khi khong co class thi luc khoi tao doi tuong dung function constructor)
+         -->
+        <script>
+
+            class Student {
+                address= "HN"
+                constructor (name,age){
+                    this.name= name;
+                    this.age= age;
+                };
+                sayHello(){
+                    console.log("hello", this.address);
+                }
+                sayHi=()=>{
+                    console.log("adgjh", this.address);
+                }
+            }
+            let std1 = new Student ("minh", 19);
+            let std2 = new Student("van anh", 19);
+            console.log(std1);
+            console.log(std1.sayHello());
+            // khi doi tuong goi phuong thuc thi this dai dien cho doi tuong do 
+            console.log("std2", std2.sayHi());
+
+         </script>
+    </body>
+</html>
